@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+:root {
+	/* Colors */
+	--bg-dark: #1a2f3a;
+
+	/* Sizes */
+	--logo-height: 80px;
+	--header-height: 80px;
+	--aside-width: 225px;
+	--footer-height: 40px;
+
+	/* Shadows */
+	--shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+	--nav-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12),
+		2px 0 15px 0 rgba(0, 0, 0, 0.09);
+	--gradient: 90deg, rgba(18, 4, 255, 1) 0%, rgba(20, 125, 250, 1) 35%,
+		rgba(4, 156, 246, 1) 100%;
+	--main-shadow: 0 0 15px #0004;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* layout */
+.app {
+	margin: 0;
+	height: 100vh;
+	background-color: #f5f5f5;
+	display: grid;
+	grid-template-columns: var(--aside-width) 1fr;
+	grid-template-rows:
+		var(--header-height)
+		1fr
+		var(--footer-height);
+	grid-template-areas:
+		'logo header'
+		'menu content'
+		'menu footer';
+}
+
+aside.logo {
+	grid-area: logo;
+}
+
+header.header {
+	grid-area: header;
+}
+
+aside.menu-area {
+	grid-area: menu;
+}
+
+main.content {
+	grid-area: content;
+}
+
+footer.footer {
+	grid-area: footer;
+}
