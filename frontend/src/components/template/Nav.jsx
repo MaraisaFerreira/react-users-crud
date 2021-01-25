@@ -8,7 +8,7 @@ export default (props) => (
 				<i className='fa fa-home'></i> Home
 			</Link>
 			<Link to='/users' className=''>
-				<i className='fa fa-users'></i> Cadastro
+				<i className='fa fa-users'></i> Usuários
 			</Link>
 		</nav>
 	</aside>

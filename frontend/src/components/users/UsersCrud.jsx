@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const headerProps = {
 	icon: 'users',
-	title: 'Cadastro',
+	title: 'Usuários',
 	subtitle: 'Cadastro de usuários: Crud (Create, Read, Update and Delete)',
 };
 
