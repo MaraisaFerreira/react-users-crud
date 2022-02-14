@@ -9,7 +9,7 @@
 <img src='assets/imgs/screenshot.gif'>
 </p>
 
-Cadastro de usuários q realiza as 4 operações CRUD realizadas em DB.
+Cadastro de usuários q realiza as 4 operações CRUD no DB.
 
 ##### Requisitos
 
